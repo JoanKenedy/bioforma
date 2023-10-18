@@ -1,5 +1,5 @@
 import React from "react";
-import Mapa from "../assets/mapa.jpg";
+import Mapa from "../assets/miMapa.png";
 import "../styles/footer.css";
 const Footer = () => {
   return (
@@ -10,11 +10,11 @@ const Footer = () => {
             <div className="item-mapa">
               <h2>Ubicación</h2>
               <h3>
-                Avenida Baja California 210-Piso 3, Consultorio 301, Roma Sur, Cuauhtémoc, 
-                06760, Ciudad de México, México.
+                Plaza Punto MAQ, Av. Miguel Ángel de Quevedo 1144, Coyoacán,
+                CDMX
               </h3>
               <a
-                href="https://api.whatsapp.com/send?phone=525652700762"
+                href="https://api.whatsapp.com/send?phone=525575015328"
                 target="_blank"
                 className="btn-rosa"
               >
@@ -28,15 +28,15 @@ const Footer = () => {
         </div>
         <div className="footer-footer">
           <div className="item-footer-footer">
-            <p>© 2023 Todos los derechos reservados Dental sonrix.</p>
+            <p>© 2023 Todos los derechos reservados Bioforma.</p>
             <p>Desarrollado por Agencia de Marketing Dentarios © 2023</p>
           </div>
           <div className="item-footer-footer">
             <a href="tel:5652700762" target="_blank">
-              <i className="fa-solid fa-phone"></i> 5652700762
+              <i className="fa-solid fa-phone"></i> 5575015328
             </a>
             <a
-              href="https://api.whatsapp.com/send?phone=525652700762"
+              href="https://api.whatsapp.com/send?phone=525575015328"
               target="_blank"
             >
               <i className="fa-brands fa-square-whatsapp"></i> +525652700762
@@ -47,6 +47,5 @@ const Footer = () => {
     </>
   );
 };
-
 
 export default Footer;

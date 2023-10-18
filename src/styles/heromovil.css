@@ -1,6 +1,7 @@
 .slider {
   max-width: 100%;
   height: 590px;
+  display: none;
 }
 .img-slider {
   width: 100%;

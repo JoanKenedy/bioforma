@@ -1,7 +1,7 @@
-import React, { Component , useState, useEffect } from "react";
+import React, { Component, useState, useEffect } from "react";
 import "../styles/hero.css";
-import Foto1 from "../assets/hero.jpg";
-import Foto2 from "../assets/dr-mayte.jpg";
+import Foto1 from "../assets/sliderCompu.jpg";
+import Foto2 from "../assets/sliderMovil.png";
 import Promo from "../assets/promo-jornada.jpeg";
 import "../styles/modal.css";
 
@@ -24,9 +24,8 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []); //termina script de los modales */
   return (
-
     <>
-    {/*
+      {/*
     <div className="modal-promo" style={{transform: modalOpen ? 'scale(1)' : 'scale(0)'}} id="modal-promo">
       <i class="fa-solid fa-x" onClick={modalClose}></i>
       <h1>Luce una sonrisa espectacular <br /> Aprovecha nuestra promoción por tiempo limitado</h1>
@@ -34,17 +33,16 @@ const Hero = () => {
       <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" id="btnContacto">Contacto</a>
     </div> */}
       <div className="hero">
-      <img src={Foto1} alt="" className="img-escritorio" />
-      <img src={Foto2} alt="" className="img-movil" />
-      <div className="texto-hero">
-        <div className="container-texto-hero">
-          <h2>Dental Sonrix</h2>
-          <p>Tu mejor opción para volver a sonreir</p>
+        <img src={Foto1} alt="" className="img-escritorio" />
+        <img src={Foto2} alt="" className="img-movil" />
+        <div className="texto-hero">
+          <div className="container-texto-hero">
+            <h2>Bioforma</h2>
+            <p>Tu mejor opción para volver a sonreir</p>
+          </div>
         </div>
       </div>
-    </div>
     </>
- 
   );
 };
 export default Hero;

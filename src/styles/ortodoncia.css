@@ -1,0 +1,128 @@
+.ortodoncia {
+  width: 100%;
+}
+.container-ortodoncia {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin: auto;
+}
+.item-ortodoncia img {
+  max-width: 100%;
+}
+.item-ortodoncia h2 {
+  color: #cea434;
+  text-align: center;
+  font-size: 2em;
+}
+.item-ortodoncia p {
+  text-align: justify;
+  font-size: 17px;
+}
+.btn-brackets {
+  background-color: #cea434;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 12px auto;
+  border: none;
+  padding: 15px 22px;
+}
+.galery-brackets {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: #cea434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 111;
+}
+.container-brackets {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.galery-brackets.aparecer {
+  height: 738px;
+  overflow: visible;
+  visibility: visible;
+}
+.galery-brackets h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+
+.item-galery-brackets img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .galery-brackets h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 12px;
+  }
+  .galery-brackets.aparecer {
+    height: 1100px;
+    overflow: visible;
+    visibility: visible;
+  }
+  .container-brackets {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .item-galery-brackets img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .ortodoncia {
+    width: 100%;
+  }
+  .container-ortodoncia {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto;
+  }
+  .item-ortodoncia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px 0px;
+  }
+  .item-ortodoncia img {
+    max-width: 100%;
+  }
+  .item-ortodoncia h2 {
+    color: #cea434;
+    text-align: center;
+    font-size: 3em;
+  }
+  .item-ortodoncia p {
+    text-align: justify;
+    font-size: 19px;
+  }
+  .btn-brackets {
+    background-color: #cea434;
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    display: block;
+    margin: 12px auto;
+    border: none;
+    padding: 15px 27px;
+  }
+}

@@ -5,10 +5,10 @@ header {
 }
 .header-top {
   width: 100%;
-  background-color: #3e606f;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 80px;
+  background-color: #cea434;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .item-header-top {
   display: flex;
@@ -16,6 +16,7 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 0px;
+  margin: 3px 15px;
 }
 .item-header-top p {
   color: azure;
@@ -42,13 +43,14 @@ header {
 }
 .container-logo {
   padding-left: 15px;
+  padding-top: 7px;
 }
 .btn-menu {
   padding-right: 15px;
 }
 .container-logo img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 .menu-nav {
@@ -65,7 +67,7 @@ header {
   opacity: 0;
   transition: all 0.7s ease;
   gap: 25px;
-  background-color: #3e606f;
+  background-color: #cea434;
   z-index: 999;
 }
 .menu-nav.openMenu {
@@ -98,12 +100,12 @@ header {
   animation-iteration-count: infinite;
 }
 .whatsapp {
-  display: none;
+  display: block;
 }
 .menu-nav .btn-urgencias {
   display: none;
 }
-.menu-nav .btn-urgencias a{
+.menu-nav .btn-urgencias a {
   color: white;
   text-decoration: none;
   font-size: 15px;
@@ -130,7 +132,7 @@ header {
   }
   .header-top {
     width: 100%;
-    background-color: #3e606f;
+
     display: flex;
     justify-content: space-between;
     padding: 10px 100px;
@@ -240,7 +242,7 @@ header {
     display: flex;
     padding: 10px 15px 10px 15px;
   }
-  .menu-nav .btn-urgencias a{
+  .menu-nav .btn-urgencias a {
     font-size: 1.5em;
   }
 }

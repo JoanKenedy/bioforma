@@ -6,7 +6,9 @@ import Services4 from "../assets/endodoncia.png";
 import Services5 from "../assets/maxilar.png";
 import Services6 from "../assets/invasiva.png";
 import Services7 from "../assets/implantologia.png";
-import Services8 from "../assets/cirugia-bucal.png";
+import Services8 from "../assets/bruxismo.png";
+import Services9 from "../assets/ortodoncia-laser.png";
+import Services10 from "../assets/atm.png";
 import "../styles/services.css";
 
 const Services = () => {
@@ -23,14 +25,14 @@ const Services = () => {
       title: "Periodoncia",
       imgSrc: Services2,
       texto:
-        "Un candidato para la estética restauradora, primero debe agendar una cita general para formular un plan de tratamiento y lograr el resultado deseado. En Dental Sonrix, es nuestro enfoque dinámico e innovador en el manejo de la estética dental, el que nos diferencia de los demás.",
+        "Un candidato para la estética restauradora, primero debe agendar una cita general para formular un plan de tratamiento y lograr el resultado deseado. En Bioforma, es nuestro enfoque dinámico e innovador en el manejo de la estética dental, el que nos diferencia de los demás.",
     },
     {
       id: 3,
       title: "Ortodoncia Funcional",
       imgSrc: Services3,
       texto:
-        "Corrige los defectos de la posición dental para mantener una boca perfecta y sana. En Dental Sonrix, somos especialistas en ortodoncia y realizamos diferentes tipos de tratamientos para adaptarnos a tus necesidades.",
+        "Corrige los defectos de la posición dental para mantener una boca perfecta y sana. En Bioforma, somos especialistas en ortodoncia y realizamos diferentes tipos de tratamientos para adaptarnos a tus necesidades.",
     },
     {
       id: 4,
@@ -48,10 +50,10 @@ const Services = () => {
     },
     {
       id: 6,
-      title: "Cirugía Oral",
+      title: "Bruxismo",
       imgSrc: Services6,
       texto:
-        "Se emplea en aquellos casos en los que, por ejemplo, se necesita realizar una elevación del seno maxilar o para promover la regeneración ósea. También cuando se llevan a cabo extracciones complejas o cirugías de la encía.",
+        "El bruxismo es una afección en la que una persona rechina, aprieta o cruje los dientes; puede ocurrir cuando se está despierto o dormido. El bruxismo que ocurre mientras una persona está despierta es más frecuente, pero el bruxismo que ocurre durante el sueño se ha estudiado más.",
     },
     {
       id: 7,
@@ -65,7 +67,21 @@ const Services = () => {
       title: " Cirugía Ortognática",
       imgSrc: Services8,
       texto:
-        "Es la encargada del estudio, prevención y tratamiento de aquellas patologías que afectan a los tejidos que protegen, rodean y sujetan los dientes: encía, hueso alveolar, ligamento periodontal y cemento radicular.",
+        "La cirugía ortognática es una intervención quirúrgica que se realiza para corregir la posición de los maxilares, o más propiamente dicho, del conjunto compuesto por el maxilar y la mandíbula. Este tipo de cirugía es competencia exclusiva del cirujano maxilofacial, que es el único especialista indicado para tratar tanto los huesos como los tejidos blandos del área facial.",
+    },
+    {
+      id: 9,
+      title: "Ortodoncia Láser",
+      imgSrc: Services9,
+      texto:
+        "Los láseres de alta potencia son una alternativa eficaz al método convencional en la adhesión y remoción de brackets sin alterar el esmalte ni dañar la pulpa dental, así como, en la prevención de la desmineralización del esmalte y el manejo de tejidos blandos durante el tratamiento ortodóntico.",
+    },
+    {
+      id: 10,
+      title: "Articulación Temporomandibular",
+      imgSrc: Services10,
+      texto:
+        "La articulación temporomandibular (ATM) es la articulación que está formada por la parte superior de la mandíbula y el hueso temporal del cráneo. Este hueso actúa como una bisagra deslizante y, en algunos casos, puede presentar problemas a causa de la complejidad de los movimientos que realiza.",
     },
   ];
   const [isModal, setIsModal] = useState(false);
@@ -83,7 +99,7 @@ const Services = () => {
        <h2>${item.title} </h2>
        <p>${item.texto} </p>
        <a
-       href="https://api.whatsapp.com/send?phone=525652700762"
+       href="https://api.whatsapp.com/send?phone=525575015328"
        target="_blank"
             id="btnAncla"
             
@@ -98,7 +114,7 @@ const Services = () => {
 
   return (
     <div className="services" id="servicios">
-      <h2 className="title-services">Servicios</h2>
+      <h2 className="title-services">Especialidades</h2>
       <div className="container-services">
         <div className="item-services">
           <img src={Services1} alt="" />
@@ -157,7 +173,7 @@ const Services = () => {
         </div>
         <div className="item-services">
           <img src={Services6} alt="" />
-          <h2>Cirugía Oral</h2>
+          <h2>Bruxismo</h2>
           <button
             className="btn-services"
             id="6"
@@ -188,21 +204,27 @@ const Services = () => {
             Ver más
           </button>
         </div>
-        <div className="item-services item-8">
-          <h2>
-            Dental Sonrix <br /> Trabaja para ti{" "}
-          </h2>
-
-          <p>
-            Estamos para brindarte una atención personalizada y un servicio
-            integral, para lograr que tu sonrisa se vea como la imaginas.
-          </p>
-          <a
-            href="https://api.whatsapp.com/send?phone=525652700762"
-            target="_blank"
+        <div className="item-services">
+          <img src={Services9} alt="" />
+          <h2>Ortodoncia Láser</h2>
+          <button
+            className="btn-services"
+            id="9"
+            onClick={(e) => handleModal(e, !isModal)}
           >
-            Contacto
-          </a>
+            Ver más
+          </button>
+        </div>
+        <div className="item-services">
+          <img src={Services10} alt="" />
+          <h2>Articulación Temporomandibular</h2>
+          <button
+            className="btn-services"
+            id="10"
+            onClick={(e) => handleModal(e, !isModal)}
+          >
+            Ver más
+          </button>
         </div>
       </div>
       <div

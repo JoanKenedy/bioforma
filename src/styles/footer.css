@@ -19,7 +19,7 @@ footer {
   font-size: 1em;
 }
 .footer-footer {
-  background-color: black;
+  background-color: #cea434;
   padding: 15px;
 }
 .footer-footer p {
@@ -37,7 +37,7 @@ footer {
 .btn-rosa {
   display: block;
   width: 150px;
-  background-color: #3e606f;
+  background-color: #cea434;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -86,7 +86,6 @@ footer {
     font-size: 1.7em;
   }
   .footer-footer {
-    background-color: black;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -106,7 +105,7 @@ footer {
   .btn-rosa {
     display: block;
     width: 200px;
-    background-color: #3e606f;
+    background-color: #cea434;
     padding: 10px;
     text-align: center;
     text-decoration: none;

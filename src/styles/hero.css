@@ -3,14 +3,13 @@
   overflow-x: hidden;
   height: 70%;
   position: relative;
-  display: none;
 }
 .texto-hero {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
+  top: -30%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -45,27 +44,36 @@
   .hero {
     width: 100%;
     overflow-x: hidden;
-    height: 550px;
+    height: 770px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .hero img {
     max-width: 100%;
     height: inherit;
     text-align: center;
   }
-
+  .texto-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
   .container-texto-hero {
     width: 50%;
     backdrop-filter: blur(10px);
     background-color: rgba(62, 96, 111, 0.5);
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+    position: absolute;
+    top: 40%;
+    left: 25%;
     padding: 10px;
   }
   .container-texto-hero h2 {

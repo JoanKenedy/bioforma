@@ -1,6 +1,6 @@
 .barra-contact {
   width: 100%;
-  background-color: #3e606f;
+  background-color: #2d2d2d;
 }
 .container-contact {
   width: 95%;
@@ -37,7 +37,7 @@
 .item-contact a {
   display: block;
   width: 200px;
-  background-color: #ad5472;
+  background-color: #cea434;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -49,7 +49,7 @@
 @media (min-width: 768px) {
   .barra-contact {
     width: 100%;
-    background-color: #3e606f;
+    background-color: #2d2d2d;
     padding: 10px;
   }
   .container-contact {
@@ -60,7 +60,7 @@
     gap: 0px;
   }
   .item-contact {
-    background-color: #ad5472;
+    background-color: #cea434;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -68,7 +68,7 @@
     padding: 50px;
   }
   .item-contact:nth-child(2) {
-    background-color: #ad5472;
+    background-color: #cea434;
   }
   .item-contact h3 {
     color: #fff;
@@ -91,7 +91,7 @@
   .item-contact a {
     display: block;
     width: 200px;
-    background-color: #3e606f;
+    background-color: #2d2d2d;
     padding: 10px;
     text-align: center;
     text-decoration: none;

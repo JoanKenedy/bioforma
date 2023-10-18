@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Logo from "../assets/logotipo-sonrix.png";
+import Logo from "../assets/bioforma_dorado.jpg";
 import Menu from "../assets/menu.png";
 import "../styles/navbar.css";
 
@@ -13,28 +13,18 @@ const Navbar = () => {
         <div className="header-top">
           <div className="item-header-top">
             <p>Teléfono</p>
-            <a href="tel:5652700762" target="_blank">
-              5652700762
+            <a href="tel:5575015328" target="_blank">
+              5575015328
             </a>
           </div>
           <div className="item-header-top whatsapp">
             <p>Whatsapp</p>
             <a
-              href="https://api.whatsapp.com/send?phone=525652700762"
+              href="https://api.whatsapp.com/send?phone=525575015328"
               target="_blank"
             >
-              +525652700762
+              +525575015328
             </a>
-          </div>
-          <div className="urgencias item-header-top">
-            <div className="btn-urgencias">
-              <a
-                href="https://api.whatsapp.com/send?phone=525652700762"
-                target="_blank"
-              >
-                Urgencias Dentales
-              </a>
-            </div>
           </div>
         </div>
         <div className="menu">
@@ -92,6 +82,18 @@ const Navbar = () => {
                 Promociones
               </Link>
               <Link
+                to="ortodoncia"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="menu-link"
+                onClick={() => isOpenMenu(false)}
+              >
+                Ortodoncia
+              </Link>
+              <Link
                 to="ubicacion"
                 activeClass="active"
                 spy={true}
@@ -111,14 +113,6 @@ const Navbar = () => {
               >
                 Agendar cita
               </a>
-              <div className="btn-urgencias">
-                <a
-                  href="https://api.whatsapp.com/send?phone=525652700762"
-                  target="_blank"
-                >
-                  Urgencias Dentales
-                </a>
-              </div>
             </nav>
             <div className="btn-menu" onClick={() => isOpenMenu(!openMenu)}>
               <img src={Menu} alt="" />

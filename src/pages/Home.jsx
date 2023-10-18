@@ -7,21 +7,22 @@ import Services from "../components/Services";
 import Galery from "../components/Galery";
 import BarraContact from "../components/BarraContact";
 import Footer from "../components/Footer";
-import HeroMovil from "../components/HeroMovil";
+
 import Modal from "../components/Modal";
-import Video from "../components/Video";
+import Ortodoncia from "../components/Ortodoncia";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <HeroMovil />
+
       <Hero />
       <Services />
       <About />
-      <Video />
-      <Promociones/>
+
+      <Promociones />
       <BarraContact />
+      <Ortodoncia />
       <Galery />
 
       <Footer />
