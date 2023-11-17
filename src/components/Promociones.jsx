@@ -57,9 +57,9 @@ const Promociones = () => {
           <h2>Promociones</h2>
         </div>
         <section className="promociones">
-          <img src={promocion1} alt="" className="promotion-img" />
           <img src={promocion2} alt="" className="promotion-img" />
           <img src={promocion3} alt="" className="promotion-img" />
+          <img src={promocion1} alt="" className="promotion-img" />
         </section>
       </div>
       <div className="container-fixed animado" id="animado">
